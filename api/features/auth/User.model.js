@@ -72,9 +72,14 @@ userSchema.statics.findByUsernameOrEmail = async function (usernameOrEmail) {
     return user
 }
 
+// find user by id
+userSchema.statics.getUserDocByID = async function (id) {
+    const user = await this.findById(id)
+    return user
+}
+
 
 const model = mongoose.model('User', userSchema)
-
 
 
 
