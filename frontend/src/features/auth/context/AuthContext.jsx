@@ -1,5 +1,6 @@
 import React from 'react'
 import { default as loginAPI } from '../login/api/request'
+import { default as signupAPI } from '../signup/api/request'
 import { useNavigate } from 'react-router-dom'
 const initialState = {
     user: null,
@@ -19,6 +20,7 @@ export const AuthProvider = ({ children }) => {
     const [error, setError] = React.useState(null)
     const [isLoggedIn, setIsLoggedIn] = React.useState(false)
     const navigate = useNavigate()
+
     const loginWithUsernameOrEmail = async (usernameOrEmail, password) => {
         try {
             setIsFetching(true)
@@ -33,6 +35,25 @@ export const AuthProvider = ({ children }) => {
         }
     }
 
+    const signupUserWithEmailAndUsername = async ({username, email, password, firstName, lastName}) => {
+        try {
+            setIsFetching(true)
+            const user = await signupAPI.signupUserWithEmailAndUsername({username, email, password, firstName, lastName})
+            setUser(user)
+            setIsLoggedIn(true)
+            setIsFetching(false)
+            navigate('/')
+        } catch (err) {
+            setError(err)
+            setIsFetching(false)
+        }
+    }
+
+    const logout = ()=> {
+        setUser(null)
+        setIsLoggedIn(false)
+        navigate('/login')
+    }
 
 
     return <AuthContext.Provider
@@ -43,7 +64,9 @@ export const AuthProvider = ({ children }) => {
             error,
             isLoggedIn,
             actions: {
-                loginWithUsernameOrEmail
+                loginWithUsernameOrEmail,
+                signupUserWithEmailAndUsername,
+                logout
             }
         }}
 

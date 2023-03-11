@@ -1,0 +1,115 @@
+[{
+  "_id": {
+    "$oid": "64031d75f14051e806b5615b"
+  },
+  "name": "air jordans",
+  "image" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/045e7f0a-2784-4dbc-8b59-b0a7e28fbfd1/chaussure-air-max-plus-pour-7bSRM4.png",
+  "description": "great shoes for basketballs",
+  "size": "36",
+  "rating" : 4,
+  "category": "clothes&shoes",
+  "price": [
+    {
+      "value": 300,
+      "currency": "USD"
+    },
+    {
+      "value": 280,
+      "currency": "EUR"
+    },
+    {
+      "value": 320,
+      "currency": "CAD"
+    }
+  ],
+  "comments": [
+    {
+      "$oid": "640342f45a74c126bc8f5af5"
+    },
+    {
+      "$oid": "6403471d1e1920e02459ae34"
+    },
+    {
+      "$oid": "640353464a642d2d2dd877c1"
+    }
+  ],
+  "__v": 3
+},{
+  "_id": {
+    "$oid": "64032447ea4621a971afc7c4"
+  },
+  "image" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/045e7f0a-2784-4dbc-8b59-b0a7e28fbfd1/chaussure-air-max-plus-pour-7bSRM4.png",
+  "name": "air jordans",
+  "description": "great shoes for basketballs",
+  "size": "36",
+  "rating" : 3.3,
+  "category": "clothes&shoes",
+  "price": [
+    {
+      "value": 300,
+      "currency": "USD"
+    },
+    {
+      "value": 280,
+      "currency": "EUR"
+    },
+    {
+      "value": 320,
+      "currency": "CAD"
+    }
+  ],
+  "comments": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6403251fdcf8e4a168aabbef"
+  },
+  "image" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/045e7f0a-2784-4dbc-8b59-b0a7e28fbfd1/chaussure-air-max-plus-pour-7bSRM4.png",
+  "name": "air jordans",
+  "description": "great shoes for basketballs",
+  "size": "36",
+  "rating" : 4.6,
+  "category": "clothes&shoes",
+  "price": [
+    {
+      "value": 300,
+      "currency": "USD"
+    },
+    {
+      "value": 280,
+      "currency": "EUR"
+    },
+    {
+      "value": 320,
+      "currency": "CAD"
+    }
+  ],
+  "comments": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64033cd4b8cdeaf7d69f48c4"
+  },
+  "image" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/045e7f0a-2784-4dbc-8b59-b0a7e28fbfd1/chaussure-air-max-plus-pour-7bSRM4.png",
+  "rating" : 2,
+  "name": "air jordans",
+  "description": "great shoes for basketballs",
+  "size": "36",
+  "category": "clothes&shoes",
+  "price": [
+    {
+      "value": 300,
+      "currency": "USD"
+    },
+    {
+      "value": 280,
+      "currency": "EUR"
+    },
+    {
+      "value": 320,
+      "currency": "CAD"
+    }
+  ],
+  "comments": [],
+  "__v": 0
+}]
